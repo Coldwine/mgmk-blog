@@ -4,6 +4,10 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'mgmk-blog',
     environment: environment,
+    contentSecurityPolicy: {
+      'connect-src': '\'self\' https://auth.firebase.com wss://*.firebaseio.com'
+    },
+    firebase: 'https://mgmk-blog.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

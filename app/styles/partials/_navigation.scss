@@ -1,0 +1,10 @@
+nav {
+  @include display-flex;
+  @include flex-direction(row);
+  @include justify-content(space-around);
+  a {
+    background: #ddd;
+    padding: 5px;
+    @include border-radius(4px, 4px);
+  }
+}
